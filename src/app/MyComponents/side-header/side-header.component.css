@@ -4,8 +4,16 @@
     padding: 16px;
     box-shadow: -1px 0px 0px 0px #D7DBEC inset;
     height: calc(100vh - 64px);
-    /* Adjust the height as needed */
     overflow-y: auto;
+    position: fixed;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #D7DBEC;
 }
 
 .sidebar-container {

@@ -1,1 +1,258 @@
-<p>orders-page works!</p>
+<div class="order-page-cont">
+    <div class="top-heading">
+        <h2>
+            Orders
+        </h2>
+        <div class="heading-buttons">
+            <button class="export-btn">
+                Export
+            </button>
+            <button class="add-btn">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7 0C7.55228 0 8 0.447715 8 1V5.999L13 6C13.5523 6 14 6.44772 14 7C14 7.55228 13.5523 8 13 8L8 7.999V13C8 13.5523 7.55228 14 7 14C6.44772 14 6 13.5523 6 13V7.999L1 8C0.447715 8 0 7.55228 0 7C0 6.44772 0.447715 6 1 6L6 5.999V1C6 0.447715 6.44772 0 7 0Z"
+                        fill="white" />
+                </svg>
+                Add Order
+            </button>
+        </div>
+    </div>
+    <div class="bottom-table">
+        <div class="table-items">
+            <div class="right-items">
+                <div class="dropdown filter">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filter
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <form role="search">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.5 0C11.6421 0 15 3.35786 15 7.5C15 9.21015 14.4276 10.7866 13.464 12.0483L16.7071 15.2929C17.0976 15.6834 17.0976 16.3166 16.7071 16.7071C16.3466 17.0676 15.7794 17.0953 15.3871 16.7903L15.2929 16.7071L12.0483 13.464C10.7866 14.4276 9.21015 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0ZM7.5 2C4.46243 2 2 4.46243 2 7.5C2 10.5376 4.46243 13 7.5 13C8.85114 13 10.0885 12.5128 11.0459 11.7045C11.091 11.5536 11.1738 11.412 11.2929 11.2929C11.412 11.1738 11.5536 11.091 11.7041 11.0446C12.5128 10.0885 13 8.85114 13 7.5C13 4.46243 10.5376 2 7.5 2Z"
+                            fill="#7E84A3" />
+                    </svg>
+                    <input type="search" placeholder="Search..." aria-label="Search">
+                </form>
+            </div>
+            <div class="left-items">
+                <a>
+                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15 16C15.5523 16 16 16.4477 16 17C16 17.5523 15.5523 18 15 18H1C0.447715 18 0 17.5523 0 17C0 16.4477 0.447715 16 1 16H15ZM14.003 0.584917L15.4151 1.99703C16.195 2.77692 16.195 4.04137 15.4151 4.82126L7.17775 13.0586C7.02498 13.2114 6.82678 13.3105 6.61291 13.341L2 14L2.65899 9.38709C2.68954 9.17322 2.78864 8.97502 2.94141 8.82225L11.1787 0.584917C11.9586 -0.194972 13.2231 -0.194972 14.003 0.584917ZM12.5909 1.99703L4.58911 9.99878L4.35399 11.646L6.00122 11.4109L14.003 3.40914L12.5909 1.99703Z"
+                            fill="#1E5EFF" />
+                    </svg>
+
+                </a>
+                <a>
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13 5V16C13 17.1046 12.1046 18 11 18H3C1.89543 18 1 17.1046 1 16V5H13ZM11 7H3V16H11V7ZM7 0C7.55228 0 8 0.447715 8 1V2H13C13.5523 2 14 2.44772 14 3C14 3.55228 13.5523 4 13 4H1C0.447715 4 0 3.55228 0 3C0 2.44772 0.447715 2 1 2H6V1C6 0.447715 6.44772 0 7 0Z"
+                            fill="#1E5EFF" />
+                    </svg>
+
+                </a>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Order
+                            </label>
+                        </div>
+                    </th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Customer</th>
+                    <th scope="col">Payment Status</th>
+                    <th scope="col">Order Status</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                #12512B
+                            </label>
+                        </div>
+                    </td>
+                    <td>May 5, 4:20 PM</td>
+                    <td>Tom Anderson</td>
+                    <td class="pay-status-paid">
+                        <p>
+                            Paid
+                        </p>
+                    </td>
+                    <td class="order-status-ready">
+                        <p>
+                            Ready
+                        </p>
+                    </td>
+                    <td>$49.90</td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                #12512B
+                            </label>
+                        </div>
+                    </td>
+                    <td>May 5, 4:20 PM</td>
+                    <td>Tom Anderson</td>
+                    <td class="pay-status-pending">
+                        <p>
+                            Pending
+                        </p>
+                    </td>
+                    <td class="order-status-shipped">
+                        <p>
+                            Shipped
+                        </p>
+                    </td>
+                    <td>$49.90</td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                #12512B
+                            </label>
+                        </div>
+                    </td>
+                    <td>May 5, 4:20 PM</td>
+                    <td>Tom Anderson</td>
+                    <td class="pay-status-pending">
+                        <p>
+                            Pending
+                        </p>
+                    </td>
+                    <td class="order-status-received">
+                        <p>
+                            Received
+                        </p>
+                    </td>
+                    <td>$49.90</td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                #12512B
+                            </label>
+                        </div>
+                    </td>
+                    <td>May 5, 4:20 PM</td>
+                    <td>Tom Anderson</td>
+                    <td class="pay-status-paid">
+                        <p>
+                            Paid
+                        </p>
+                    </td>
+                    <td class="order-status-ready">
+                        <p>
+                            Ready
+                        </p>
+                    </td>
+                    <td>$49.90</td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                #12512B
+                            </label>
+                        </div>
+                    </td>
+                    <td>May 5, 4:20 PM</td>
+                    <td>Tom Anderson</td>
+                    <td class="pay-status-pending">
+                        <p>
+                            Pending
+                        </p>
+                    </td>
+                    <td class="order-status-shipped">
+                        <p>
+                            Shipped
+                        </p>
+                    </td>
+                    <td>$49.90</td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                #12512B
+                            </label>
+                        </div>
+                    </td>
+                    <td>May 5, 4:20 PM</td>
+                    <td>Tom Anderson</td>
+                    <td class="pay-status-pending">
+                        <p>
+                            Pending
+                        </p>
+                    </td>
+                    <td class="order-status-received">
+                        <p>
+                            Received
+                        </p>
+                    </td>
+                    <td>$49.90</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="table-footer">
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link"><svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.3871 0.209705L5.29289 0.292893L0.292893 5.29289C-0.0675907 5.65338 -0.0953203 6.22061 0.209705 6.6129L0.292893 6.70711L5.29289 11.7071C5.68342 12.0976 6.31658 12.0976 6.70711 11.7071C7.06759 11.3466 7.09532 10.7794 6.7903 10.3871L6.70711 10.2929L3.414 6.999L14 7C14.5523 7 15 6.55228 15 6C15 5.44772 14.5523 5 14 5L3.416 4.999L6.70711 1.70711C7.06759 1.34662 7.09532 0.779392 6.7903 0.387101L6.70711 0.292893C6.34662 -0.0675907 5.77939 -0.0953203 5.3871 0.209705Z"
+                                    fill="#7E84A3" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">24</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"><svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.6129 0.209705C9.22061 -0.0953203 8.65338 -0.0675907 8.29289 0.292893L8.2097 0.387101C7.90468 0.779392 7.93241 1.34662 8.29289 1.70711L11.5852 5H1C0.447715 5 0 5.44772 0 6C0 6.55228 0.447715 7 1 7H11.5852L8.29289 10.2929L8.2097 10.3871C7.90468 10.7794 7.93241 11.3466 8.29289 11.7071C8.68342 12.0976 9.31658 12.0976 9.70711 11.7071L14.7071 6.70711L14.7903 6.6129C15.0953 6.22061 15.0676 5.65338 14.7071 5.29289L9.70711 0.292893L9.6129 0.209705Z"
+                                    fill="#7E84A3" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="total-order">
+                274 results
+            </p>
+        </div>
+    </div>
+</div>

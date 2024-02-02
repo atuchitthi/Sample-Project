@@ -1,0 +1,256 @@
+.order-page-cont {
+    padding: 28px 40px;
+    display: grid;
+    gap: 28px;
+}
+
+.top-heading {
+    display: grid;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.top-heading h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #131523;
+    margin: 0;
+}
+
+.heading-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 12px;
+}
+
+.export-btn {
+    background-color: #fff;
+    color: #1E5EFF;
+    border: 1px solid #D7DBEC;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 98px;
+    height: 40px;
+    text-align: center;
+}
+
+.add-btn {
+    background-color: #1E5EFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 148px;
+    height: 40px;
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    place-content: center;
+    gap: 8px;
+}
+
+.bottom-table {
+    background-color: #fff;
+    max-width: 1110px;
+    width: 100%;
+    padding: 32px 28px;
+    display: grid;
+    gap: 20px;
+}
+
+.table-items {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-items {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.filter {
+    width: 180px;
+    height: 40px;
+    position: relative;
+    border: 1px solid #D9E1EC;
+    border-radius: 4px;
+}
+
+.filter button {
+    color: #A1A7C4;
+
+}
+
+.filter .dropdown-toggle::after {
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-bottom: 2px solid #7E84A3;
+    border-right: 2px solid #7E84A3;
+    transform: rotate(45deg);
+    right: 10px;
+    top: 0;
+    bottom: 2px;
+    margin: auto 0;
+    position: absolute;
+}
+
+form {
+    display: grid;
+    grid-auto-flow: column;
+    width: 350px;
+    height: 40px;
+    border: 1px solid #D9E1EC;
+    border-radius: 4px;
+    align-items: center;
+    grid-auto-columns: auto 1fr;
+    padding: 0 16px;
+}
+
+form input {
+    border: none;
+    max-width: 750px;
+    width: 100%;
+    padding: 0;
+    margin-left: 12px;
+    outline: none;
+    color: #5A607F;
+}
+
+form input::placeholder {
+    color: #A1A7C4;
+}
+
+form .input:focus {
+    outline: none;
+}
+
+.left-items {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+}
+
+.left-items a {
+    border: 1px solid #D7DBEC;
+    padding: 7px 10px;
+    border-radius: 4px;
+}
+
+.table th {
+    color: #5A607F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+
+.table td {
+    color: #131523;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.table tr label {
+    font-weight: 500;
+}
+
+.table .pay-status-paid p {
+    background-color: #C4F8E2;
+    color: #06A561;
+    padding: 4px 8px;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: max-content;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.table .pay-status-pending p {
+    background-color: #E6E9F4;
+    color: #5A607F;
+    padding: 4px 8px;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: max-content;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.table .order-status-ready p {
+    background-color: #F99600;
+    color: #fff;
+    padding: 4px 8px;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: max-content;
+    margin: 6px 0;
+    border-radius: 4px;
+}
+
+.table .order-status-shipped p {
+    background-color: #5A607F;
+    color: #fff;
+    padding: 4px 8px;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: max-content;
+    margin: 6px 0;
+    border-radius: 4px;
+}
+
+.table .order-status-received p {
+    background-color: #1E5EFF;
+    color: #fff;
+    padding: 4px 8px;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: max-content;
+    margin: 6px 0;
+    border-radius: 4px;
+}
+
+.table-footer{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination{
+    margin: 0;
+}
+.page-link {
+    border: none;
+    background: none;
+    color: #5A607F;
+    font-size: 16px;
+}
+
+.active {
+    background-color: #ECF2FF;
+    border-radius: 4px;
+}
+
+.active a {
+    color: #1E5EFF;
+}
+.total-order{
+    margin: 0;
+    color: #5A607F;
+    font-size: 16px;
+}
