@@ -1,0 +1,77 @@
+.sidebar {
+    max-width: 250px;
+    width: 100%;
+    padding: 16px;
+    box-shadow: -1px 0px 0px 0px #D7DBEC inset;
+    height: calc(100vh - 64px);
+    /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+.sidebar-container {
+    display: grid;
+    gap: 24px;
+}
+
+.sidebar-toplist {
+    display: grid;
+}
+
+.sidebar-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    height: 44px;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+.sidebar-item h3 {
+    font-size: 14px;
+    color: #5A607F;
+    line-height: 20px;
+    margin: 0;
+}
+
+.sidebar-active {
+    background-color: #1E5EFF;
+    border-radius: 3px;
+    position: relative;
+}
+
+.sidebar-active h3 {
+    color: #fff;
+}
+
+.sidebar-active p {
+    position: absolute;
+    right: 10px;
+    background-color: black;
+    border-radius: 100%;
+    padding: 0px 6px;
+    font-size: 12px;
+    color: #fff;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 17px;
+}
+
+.sidebar-active svg path {
+    fill: #fff;
+}
+
+.sidebar-midlist,
+.sidebar-bottomlist {
+    display: grid;
+    gap: 16px;
+}
+
+.sidebar-midlist p,
+.sidebar-bottomlist p {
+    margin: 0;
+    font-size: 12px;
+    color: #A1A7C4;
+    padding-left: 16px;
+}
